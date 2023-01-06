@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_riwayat_keuangan"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:src="@drawable/plain_credit_card_cuate" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/text_riwayat_keuangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/list_view_history"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="16dp"
+            android:text="Riwayat Keuangan"
+            android:textSize="8pt"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/list_view_history"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_above="@+id/button_group"
+            android:layout_weight="12" />
+
+        <LinearLayout
+            android:id="@+id/button_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/green_button"
+                android:text="Pemasukan"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/button_expense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/green_button"
+                android:text="Pengeluaran"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
